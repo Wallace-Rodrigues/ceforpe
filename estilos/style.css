@@ -1,0 +1,78 @@
+/* -------------- */
+body {
+    margin: 0;
+    
+}
+
+nav {
+    border-bottom: 2px solid;
+    
+    color: black;
+}
+
+/* -------estilizando o menu principal------- */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf;
+   
+    
+    
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    
+    
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+    
+    
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: black;
+    
+    
+    
+}
+
+
+/* ------estilizando o sub-menu-------- */
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    
+    
+    
+}
+
+
+nav li:hover .submenu{
+    display: block;
+    
+}
+
+nav .submenu li{
+    display: block;
+    min-inline-size: max-content;
+    border-bottom: 1px solid;
+        
+}
+nav .submenu li:hover{
+    border-left: 4px solid;
+        
+}
+
+

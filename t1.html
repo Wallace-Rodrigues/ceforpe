@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <script>
+    var curso;
+    var curso2;
+    function valor() {
+      if(document.getElementById("g1").checked) {
+        curso = "birulabe";
+    }
+    //curso = document.getElementById("g1").value;
+    //curso2 = document.getElementById("g2").value;
+    return document.getElementById("text").innerHTML = curso; 
+    
+}
+  </script>
+</head>
+<body>
+  <input type="radio" id="g1" name="group" value="1">inf
+  <input type="radio" id="g2" name="group" value="2">agr
+  <input type="radio" id="g3" name="group" value="3">ali
+  <input type="submit" value="enviar" onclick="valor()">
+  <h1 id="text"></h1>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilos/estilojs.css'>
+    <script src='scripts/script_1.js'></script>
+
+    <script>
+        var v1 = 0;
+        var v2 = 100;
+        function botao_add() {
+            v1++;
+            return document.getElementById("v1").innerHTML = v1;
+        }
+        function botao_rem() {
+            v1--;
+            return document.getElementById("v1").innerHTML = v1;
+        }
+        
+        function minhaFuncao() {
+            document.getElementById("demo").innerHTML = "Parabens funcionou!";
+        }
+
+        function oi(){
+           var text = document.getElementById("p").innerHTML = "OI";
+           return text;
+        }
+        function nada(){
+            var text = document.getElementById("p").innerHTML = "";
+            
+            return text;
+        }
+        var nome;
+        function minha(){
+            nome = document.getElementById("")
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p id="demo">nada ainda</p>
+
+    <button type="button" onclick="minhaFuncao()" onmouseover="oi()" onmouseout="nada()">Clique aqui</button>
+    <br>
+    <br>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+    <div class="div_tab">
+        <p id="p"></p>
+        
+
+        <table>
+            <tr>
+                <td colspan="2">VALOR</td>
+                
+            </tr>
+            <tr>
+                <td><button type="button" onclick="botao_add()" class="button">+1</button></td>
+                <td><button type="button" onclick="botao_rem()" class="button">-1</button></td>
+
+            </tr>
+            <tr>
+                <td id="v1" >0</td>
+                <td id="v2" >100</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
+
